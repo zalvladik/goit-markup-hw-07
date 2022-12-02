@@ -8,30 +8,45 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/mobile.min.css" />
     <title>Document</title>
 </head>
 <body>
     <!-- Шапка сайту -->
     <header class="header-page header-border">
         <div class="container">
-        <nav class="header-page__nav">
             <span class="header-page__logo-setting">
                 <a href="#" class="logo ">Web</a></li>
                 <a href="#" class="logo black-logo">Studio</a></li>
             </span>
-            <ul class="header-page__nav-list ">
-                <li class="item"><a href="./index.html" class="header-page__link border">Студія</a></li>
-                <li class="item"><a href="#" class="header-page__link blue-link">Портфоліо</a></li>
+          <div class="menu-container" data-menu>
+        <nav class="header-page__nav">
+            <ul class="header-page__nav-list">
+                <li class="item"><a href="./index.html" class="header-page__link blue-link">Студія</a></li>
+                <li class="item"><a href="#" class="header-page__link border">Портфоліо</a></li>
                 <li class="item"><a href="#" class="header-page__link border">Контакти</a></li>
             </ul>
         </nav>
             <ul class="header-page__address">
-                <li class="item"><a href="emaito:info@devstudio.com" class="header-page__contact"> 
+                <li class="item"><a href="emailto:info@devstudio.com" class="header-page__email"> 
                     <svg class="header-page__icon-email"><use href="./images/icons.svg#icon-email"></use></svg>info@devstudio.com</a></li>
-                <li class="item"><a href="tel:+38 096 111 11 11" class="header-page__contact">
+                <li class="item"><a href="tel:+38 096 111 11 11" class="header-page__tel">
                     <svg class="header-page__icon-tel"><use href="./images/icons.svg#icon-tel"></use></svg>+38 096 111 11 11</a></li>
             </ul>
+
+            <ul class="header-page__social-list">
+                <li class="item"><a class="header-page__social-link"href="#">Instagram</a></li>
+                <li class="item"><a class="header-page__social-link"href="#">Twitter</a></li>
+                <li class="item"><a class="header-page__social-link"href="#">Facebook</a></li>
+                <li class="item"><a class="header-page__social-link"href="#">LinkedIn</a></li>
+            </ul>
+        </div>
+            <button type="button" class="menu-button" data-menu-button>
+                <svg class="burger__icon-list" width="40px" height="40px" aria-label="Переключатель бургера">
+                    <use class="icon__burger-open" href="./images/icons.svg#icon-burger-open"></use>
+                    <use class="icon__burger-close" href="./images/icons.svg#icon-burger-close"></use>
+                </svg>
+            </button>
         </div>
     </header>
     
@@ -154,6 +169,21 @@
             </form>
     </div>
 </footer>
-<script src="./js/modal.js"></script>
+<script>
+    (() => {
+    const menuBtnRef = document.querySelector("[data-menu-button]");
+    const mobileMenuRef = document.querySelector("[data-menu]");
+  
+    menuBtnRef.addEventListener("click", () => {
+      const expanded =
+        menuBtnRef.getAttribute("aria-expanded") === "true" || false;
+  
+      menuBtnRef.classList.toggle("is-open");
+      menuBtnRef.setAttribute("aria-expanded", !expanded);
+  
+      mobileMenuRef.classList.toggle("is-open");
+    });
+  })();
+</script>
 </body>
 </html>

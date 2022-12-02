@@ -8,30 +8,45 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/mobile.min.css" />
     <title>Document</title>
 </head>
 <body>
     <!-- Шапка сайту -------------------------------->
     <header class="header-page">
         <div class="container">
-        <nav class="header-page__nav">
             <span class="header-page__logo-setting">
                 <a href="#" class="logo ">Web</a></li>
                 <a href="#" class="logo black-logo">Studio</a></li>
             </span>
-            <ul class="header-page__nav-list ">
+          <div class="menu-container" data-menu>
+        <nav class="header-page__nav">
+            <ul class="header-page__nav-list">
                 <li class="item"><a href="#" class="header-page__link blue-link">Студія</a></li>
                 <li class="item"><a href="./portfolio.html" class="header-page__link border">Портфоліо</a></li>
                 <li class="item"><a href="#" class="header-page__link border">Контакти</a></li>
             </ul>
         </nav>
             <ul class="header-page__address">
-                <li class="item"><a href="emaito:info@devstudio.com" class="header-page__contact"> 
+                <li class="item"><a href="emailto:info@devstudio.com" class="header-page__email"> 
                     <svg class="header-page__icon-email"><use href="./images/icons.svg#icon-email"></use></svg>info@devstudio.com</a></li>
-                <li class="item"><a href="tel:+38 096 111 11 11" class="header-page__contact">
+                <li class="item"><a href="tel:+38 096 111 11 11" class="header-page__tel">
                     <svg class="header-page__icon-tel"><use href="./images/icons.svg#icon-tel"></use></svg>+38 096 111 11 11</a></li>
             </ul>
+
+            <ul class="header-page__social-list">
+                <li class="item"><a class="header-page__social-link"href="#">Instagram</a></li>
+                <li class="item"><a class="header-page__social-link"href="#">Twitter</a></li>
+                <li class="item"><a class="header-page__social-link"href="#">Facebook</a></li>
+                <li class="item"><a class="header-page__social-link"href="#">LinkedIn</a></li>
+            </ul>
+        </div>
+            <button type="button" class="menu-button" data-menu-button>
+                <svg class="burger__icon-list" width="40px" height="40px" aria-label="Переключатель бургера">
+                    <use class="icon__burger-close" href="./images/icons.svg#icon-burger-close"></use>
+                    <use class="icon__burger-open" href="./images/icons.svg#icon-burger-open"></use>
+                </svg>
+            </button>
         </div>
     </header>
 
@@ -102,7 +117,7 @@
                     <h2 class="main-page-title">Наша команда</h2>
                 <ul class="team-page__list ">
                     <li class="item"> 
-                        <img src="./images/image3.jpg" alt="Ігор Дем'яненко" width="270"/>
+                        <img src="./images/image3.jpg" alt="Ігор Дем'яненко" width="450" height="460"/>
                         <div class="team-page__worker-board">
                         <h3 class="team-page__name-worker">Ігор Дем'яненко</h3>
                         <p class="team-page__proffesion">Product Designer</p>
