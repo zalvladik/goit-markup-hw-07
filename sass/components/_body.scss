@@ -8,7 +8,7 @@
         background-image: linear-gradient(to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
-        ), url('../../images/mobile/bg480-1x.jpg');
+        ), url(../../images/mobile/bg480-1x.jpg);
         background-size: 480px 400px;
         
         @media screen and (min-device-pixel-ratio: 2),
@@ -17,7 +17,7 @@
         background-image: linear-gradient(to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
-        ), url('../../images/mobile/bg480-2x.jpg');
+        ), url(../../images/mobile/bg480-2x.jpg);
         }
     }
 
@@ -99,7 +99,6 @@
         transition: transform $cubic;
     }
 }
-
 /*Переваги--------------------------*/
 .info-page{
     background-color: #FFFFFF;
@@ -220,7 +219,6 @@
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
-
     &> .item {
         height: 294px;
         position: relative;
