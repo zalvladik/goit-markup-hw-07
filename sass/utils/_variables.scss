@@ -15,3 +15,14 @@ body {
     font-family: Roboto, sans-serif;
     color:var(--primary-text-color);
 }
+.main-page-title{
+    font-size: 28px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-color;
+    margin-bottom:30px;
+    @media screen and(min-width:1200px){
+        margin-bottom: 50px;
+    }
+}

@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
-    <link rel="stylesheet" href="./css/mobile.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>Document</title>
 </head>
 <body>
@@ -116,8 +116,38 @@
                 <div class="container">
                     <h2 class="main-page-title">Наша команда</h2>
                 <ul class="team-page__list ">
-                    <li class="item"> 
-                        <img src="./images/image3.jpg" alt="Ігор Дем'яненко" width="450" height="460"/>
+                    <li class="item">
+                        <picture>
+                        <source
+                            srcset="
+                            ./images/mobile/image1-450.jpg 1x,
+                            ./images/mobile/image1-900.jpg 2x
+                            "
+                            media="(max-width: 767px)"
+                            type="image/jpeg"
+                        />
+                        <source
+                            srcset="
+                              ./images/tabletka/image1-354.jpg 1x,
+                              ./images/tabletka/image1-708.jpg 2x
+                            "
+                            media="(max-width: 1199px)"
+                            type="image/jpeg"
+                        />
+                        <source
+                            srcset="
+                            ./images/desktop/image1-270.jpg 1x,
+                            ./images/desktop/image1-540.jpg 2x
+                            "
+                            
+                            type="image/jpeg"
+                        />
+                        <img
+                            class="team-list__icon"
+                            src="./images/mobile/image1-450.jpg"
+                            alt="Фотографія працівника"
+                        />
+                    </picture> 
                         <div class="team-page__worker-board">
                         <h3 class="team-page__name-worker">Ігор Дем'яненко</h3>
                         <p class="team-page__proffesion">Product Designer</p>
@@ -134,7 +164,38 @@
                     </div>
                     </li>
 
-                    <li class="item"> <img src="./images/image4.jpg" alt="Ольга Рєпана" width="270"/>
+                    <li class="item"> 
+                        <picture>
+                            <source
+                                srcset="
+                                ./images/mobile/image2-450.jpg 1x,
+                                ./images/mobile/image2-900.jpg 2x
+                                "
+                                media="(max-width: 767px)"
+                                type="image/jpeg"
+                            />
+                            <source
+                                srcset="
+                                  ./images/tabletka/image2-354.jpg 1x,
+                                  ./images/tabletka/image2-708.jpg 2x
+                                "
+                                media="(max-width: 1199px)"
+                                type="image/jpeg"
+                            />
+                            <source
+                                srcset="
+                                ./images/desktop/image2-270.jpg 1x,
+                                ./images/desktop/image2-540.jpg 2x
+                                "
+                                
+                                type="image/jpeg"
+                            />
+                            <img
+                                class="team-list__icon"
+                                src="./images/mobile/image2-450.jpg"
+                                alt="Фотографія працівника"
+                            />
+                        </picture> 
                         <div class="team-page__worker-board">
                         <h3 class="team-page__name-worker">Ольга Рєпана</h3>
                         <p class="team-page__proffesion">Frontend Developer</p>
@@ -151,7 +212,38 @@
                     </div>
                     </li>
 
-                    <li class="item"> <img src="./images/image5.jpg" alt="Микола Тарасов" width="270"/>
+                    <li class="item"> 
+                        <picture>
+                            <source
+                                srcset="
+                                ./images/mobile/image3-450.jpg 1x,
+                                ./images/mobile/image3-900.jpg 2x
+                                "
+                                media="(max-width: 767px)"
+                                type="image/jpeg"
+                            />
+                            <source
+                                srcset="
+                                  ./images/tabletka/image3-354.jpg 1x,
+                                  ./images/tabletka/image3-708.jpg 2x
+                                "
+                                media="(max-width: 1199px)"
+                                type="image/jpeg"
+                            />
+                            <source
+                                srcset="
+                                ./images/desktop/image3-270.jpg 1x,
+                                ./images/desktop/image3-540.jpg 2x
+                                "
+                                
+                                type="image/jpeg"
+                            />
+                            <img
+                                class="team-list__icon"
+                                src="./images/mobile/image3-450.jpg"
+                                alt="Фотографія працівника"
+                            />
+                        </picture> 
                         <div class="team-page__worker-board">
                         <h3 class="team-page__name-worker">Микола Тарасов</h3>
                         <p class="team-page__proffesion">Marketing</p>
@@ -168,7 +260,37 @@
                     </div>
                     </li>
 
-                    <li class="item"> <img src="./images/image6.jpg" alt="Михайло Єрмаков" width="270"/>
+                    <li class="item"> 
+                        <picture>
+                            <source
+                                srcset="
+                                ./images/mobile/image4-450.jpg 1x,
+                                ./images/mobile/image4-900.jpg 2x
+                                "
+                                media="(max-width: 767px)"
+                                type="image/jpeg"
+                            />
+                            <source
+                                srcset="
+                                  ./images/tabletka/image4-354.jpg 1x,
+                                  ./images/tabletka/image4-708.jpg 2x
+                                "
+                                media="(max-width: 1199px)"
+                                type="image/jpeg"
+                            />
+                            <source
+                                srcset="
+                                ./images/desktop/image4-270.jpg 1x,
+                                ./images/desktop/image4-540.jpg 2x
+                                "
+                                type="image/jpeg"
+                            />
+                            <img
+                                class="team-list__icon"
+                                src="./images/mobile/image4-450.jpg"
+                                alt="Фотографія працівника"
+                            />
+                        </picture> 
                         <div class="team-page__worker-board">
                         <h3 class="team-page__name-worker">Михайло Єрмаков</h3>
                         <p class="team-page__proffesion">UI Designer</p>

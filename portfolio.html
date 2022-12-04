@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
-    <link rel="stylesheet" href="./css/mobile.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>Document</title>
 </head>
 <body>
@@ -22,8 +22,8 @@
           <div class="menu-container" data-menu>
         <nav class="header-page__nav">
             <ul class="header-page__nav-list">
-                <li class="item"><a href="./index.html" class="header-page__link blue-link">Студія</a></li>
-                <li class="item"><a href="#" class="header-page__link border">Портфоліо</a></li>
+                <li class="item"><a href="./index.html" class="header-page__link border">Студія</a></li>
+                <li class="item"><a href="#" class="header-page__link blue-link">Портфоліо</a></li>
                 <li class="item"><a href="#" class="header-page__link border">Контакти</a></li>
             </ul>
         </nav>
@@ -63,63 +63,333 @@
             </ul>
     <!-- Панорама---------------------------------->
             <ul class="panorama-page__panorama-list">
-                <li class="item"> <div class="panorama-page__move-up"><img src="./images/portfolio1.jpg" alt="Баскетбольчик" width="370">
+                <li class="item"> <div class="panorama-page__move-up">
+                        <picture>
+                            <source
+                                srcset="
+                                ./images/mobile/image5-450.jpg 1x,
+                                ./images/mobile/image5-900.jpg 2x
+                                "
+                                media="(max-width: 767px)"
+                                type="image/jpeg"
+                            />
+                            <source
+                                srcset="
+                                  ./images/tabletka/image5-354.jpg 1x,
+                                  ./images/tabletka/image5-708.jpg 2x
+                                "
+                                media="(max-width: 1199px)"
+                                type="image/jpeg"
+                            />
+                            <source
+                                srcset="
+                                ./images/desktop/image5-370.jpg 1x,
+                                ./images/desktop/image5-740.jpg 2x
+                                "
+                                type="image/jpeg"
+                            />
+                            <img
+                                class="panorama-icon"
+                                src="./images/mobile/image5-450.jpg"
+                                alt="Ноутбук"
+                            />
+                        </picture> 
                     <div class="panorama-page__move"><p class="panorama-page__move-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div></div>
                     <div class="panorama-page__under-card">
                 <h2 class="panorama-page__title-card">Технокряк</h2>
             <p class="panorama-page__text-card">Веб-сайт</p>
         </div>
         </li>
-                <li class="item"> <div class="panorama-page__move-up"><img src="./images/portfolio2.jpg" alt="Баскетбольчик" width="370">
+                <li class="item"> <div class="panorama-page__move-up">
+                    <picture>
+                        <source
+                            srcset="
+                            ./images/mobile/image6-450.jpg 1x,
+                            ./images/mobile/image6-900.jpg 2x
+                            "
+                            media="(max-width: 767px)"
+                            type="image/jpeg"
+                        />
+                        <source
+                            srcset="
+                              ./images/tabletka/image6-354.jpg 1x,
+                              ./images/tabletka/image6-708.jpg 2x
+                            "
+                            media="(max-width: 1199px)"
+                            type="image/jpeg"
+                        />
+                        <source
+                            srcset="
+                            ./images/desktop/image6-370.jpg 1x,
+                            ./images/desktop/image6-740.jpg 2x
+                            "
+                            type="image/jpeg"
+                        />
+                        <img
+                            class="panorama-icon"
+                            src="./images/mobile/image6-450.jpg"
+                            alt="баскетбол"
+                        />
+                    </picture> 
                     <div class="panorama-page__move"><p class="panorama-page__move-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div></div>
                     <div class="panorama-page__under-card">
                 <h2 class="panorama-page__title-card">Постер New Orlean vs Golden Star</h2>
             <p class="panorama-page__text-card">Дизайн</p>
         </div>
         </li>
-                <li class="item"> <div class="panorama-page__move-up"><img src="./images/portfolio3.jpg" alt="Риба" width="370">
+                <li class="item"> <div class="panorama-page__move-up">
+                    <picture>
+                        <source
+                            srcset="
+                            ./images/mobile/image7-450.jpg 1x,
+                            ./images/mobile/image7-900.jpg 2x
+                            "
+                            media="(max-width: 767px)"
+                            type="image/jpeg"
+                        />
+                        <source
+                            srcset="
+                              ./images/tabletka/image7-354.jpg 1x,
+                              ./images/tabletka/image7-708.jpg 2x
+                            "
+                            media="(max-width: 1199px)"
+                            type="image/jpeg"
+                        />
+                        <source
+                            srcset="
+                            ./images/desktop/image7-370.jpg 1x,
+                            ./images/desktop/image7-740.jpg 2x
+                            "
+                            type="image/jpeg"
+                        />
+                        <img
+                            class="panorama-icon"
+                            src="./images/mobile/image7-450.jpg"
+                            alt="Фотографія працівника"
+                        />
+                    </picture> 
                     <div class="panorama-page__move"><p class="panorama-page__move-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div></div>
                     <div class="panorama-page__under-card">
                 <h2 class="panorama-page__title-card">Ресторан Seafood</h2>
             <p class="panorama-page__text-card">Додаток</p>
         </div>
         </li>
-                <li class="item"> <div class="panorama-page__move-up"><img src="./images/portfolio4.jpg" alt="Навушники" width="370">
+                <li class="item"> <div class="panorama-page__move-up">
+                    <picture>
+                        <source
+                            srcset="
+                            ./images/mobile/image8-450.jpg 1x,
+                            ./images/mobile/image8-900.jpg 2x
+                            "
+                            media="(max-width: 767px)"
+                            type="image/jpeg"
+                        />
+                        <source
+                            srcset="
+                              ./images/tabletka/image8-354.jpg 1x,
+                              ./images/tabletka/image8-708.jpg 2x
+                            "
+                            media="(max-width: 1199px)"
+                            type="image/jpeg"
+                        />
+                        <source
+                            srcset="
+                            ./images/desktop/image8-370.jpg 1x,
+                            ./images/desktop/image8-740.jpg 2x
+                            "
+                            type="image/jpeg"
+                        />
+                        <img
+                            class="panorama-icon"
+                            src="./images/mobile/image8-450.jpg"
+                            alt="Навушники"
+                        />
+                    </picture> 
                     <div class="panorama-page__move"><p class="panorama-page__move-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div></div>
                     <div class="panorama-page__under-card">
                 <h2 class="panorama-page__title-card">Проєкт Prime</h2>
             <p class="panorama-page__text-card">Маркетинг</p>
         </div>
         </li>
-                <li class="item"> <div class="panorama-page__move-up"><img src="./images/portfolio5.jpg" alt="Коробки" width="370">
+                <li class="item"> <div class="panorama-page__move-up">
+                    <picture>
+                        <source
+                            srcset="
+                            ./images/mobile/image9-450.jpg 1x,
+                            ./images/mobile/image9-900.jpg 2x
+                            "
+                            media="(max-width: 767px)"
+                            type="image/jpeg"
+                        />
+                        <source
+                            srcset="
+                              ./images/tabletka/image9-354.jpg 1x,
+                              ./images/tabletka/image9-708.jpg 2x
+                            "
+                            media="(max-width: 1199px)"
+                            type="image/jpeg"
+                        />
+                        <source
+                            srcset="
+                            ./images/desktop/image9-370.jpg 1x,
+                            ./images/desktop/image9-740.jpg 2x
+                            "
+                            type="image/jpeg"
+                        />
+                        <img
+                            class="panorama-icon"
+                            src="./images/mobile/image9-450.jpg"
+                            alt="Фотографія працівника"
+                        />
+                    </picture> 
                     <div class="panorama-page__move"><p class="panorama-page__move-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div></div>
                     <div class="panorama-page__under-card">
                 <h2 class="panorama-page__title-card">Проєкт Boxes</h2>
             <p class="panorama-page__text-card">Додаток</p>
         </div>
         </li>
-                <li class="item"> <div class="panorama-page__move-up"><img src="./images/portfolio6.jpg" alt="Монітор" width="370">
+                <li class="item"> <div class="panorama-page__move-up">
+                    <picture>
+                        <source
+                            srcset="
+                            ./images/mobile/image10-450.jpg 1x,
+                            ./images/mobile/image10-900.jpg 2x
+                            "
+                            media="(max-width: 767px)"
+                            type="image/jpeg"
+                        />
+                        <source
+                            srcset="
+                              ./images/tabletka/image10-354.jpg 1x,
+                              ./images/tabletka/image10-708.jpg 2x
+                            "
+                            media="(max-width: 1199px)"
+                            type="image/jpeg"
+                        />
+                        <source
+                            srcset="
+                            ./images/desktop/image10-370.jpg 1x,
+                            ./images/desktop/image10-740.jpg 2x
+                            "
+                            type="image/jpeg"
+                        />
+                        <img
+                            class="panorama-icon"
+                            src="./images/mobile/image10-450.jpg"
+                            alt="Монітор"
+                        />
+                    </picture> 
                     <div class="panorama-page__move"><p class="panorama-page__move-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div></div>
                     <div class="panorama-page__under-card">
                 <h2 class="panorama-page__title-card">Inspiration has no Borders</h2>
             <p class="panorama-page__text-card">Веб-сайт</p>
         </div>
         </li>
-                <li class="item"> <div class="panorama-page__move-up"><img src="./images/portfolio7.jpg" alt="Книжки" width="370">
+                <li class="item"> <div class="panorama-page__move-up">
+                    <picture>
+                        <source
+                            srcset="
+                            ./images/mobile/image11-450.jpg 1x,
+                            ./images/mobile/image11-900.jpg 2x
+                            "
+                            media="(max-width: 767px)"
+                            type="image/jpeg"
+                        />
+                        <source
+                            srcset="
+                              ./images/tabletka/image11-354.jpg 1x,
+                              ./images/tabletka/image11-708.jpg 2x
+                            "
+                            media="(max-width: 1199px)"
+                            type="image/jpeg"
+                        />
+                        <source
+                            srcset="
+                            ./images/desktop/image11-370.jpg 1x,
+                            ./images/desktop/image11-740.jpg 2x
+                            "
+                            type="image/jpeg"
+                        />
+                        <img
+                            class="panorama-icon"
+                            src="./images/mobile/image11-450.jpg"
+                            alt="Книжки"
+                        />
+                    </picture> 
                     <div class="panorama-page__move"><p class="panorama-page__move-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div></div>
                     <div class="panorama-page__under-card">
                 <h2 class="panorama-page__title-card">Видання Limited Edition</h2>
             <p class="panorama-page__text-card">Дизайн</p>
         </div>
         </li>
-                <li class="item"> <div class="panorama-page__move-up"><img src="./images/portfolio8.jpg" alt="Ярлики" width="370">
+                <li class="item"> <div class="panorama-page__move-up">
+                    <picture>
+                        <source
+                            srcset="
+                            ./images/mobile/image12-450.jpg 1x,
+                            ./images/mobile/image12-900.jpg 2x
+                            "
+                            media="(max-width: 767px)"
+                            type="image/jpeg"
+                        />
+                        <source
+                            srcset="
+                              ./images/tabletka/image12-354.jpg 1x,
+                              ./images/tabletka/image12-708.jpg 2x
+                            "
+                            media="(max-width: 1199px)"
+                            type="image/jpeg"
+                        />
+                        <source
+                            srcset="
+                            ./images/desktop/image12-370.jpg 1x,
+                            ./images/desktop/image12-740.jpg 2x
+                            "
+                            type="image/jpeg"
+                        />
+                        <img
+                            class="panorama-icon"
+                            src="./images/mobile/image12-450.jpg"
+                            alt="Ярлики"
+                        />
+                    </picture> 
                     <div class="panorama-page__move"><p class="panorama-page__move-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div></div>
                     <div class="panorama-page__under-card">
                 <h2 class="panorama-page__title-card">Проєкт LAB</h2>
             <p class="panorama-page__text-card">Маркетинг</p>
         </div>
         </li>
-                <li class="item"> <div class="panorama-page__move-up"><img src="./images/portfolio9.jpg" alt="Додатки" width="370">
+                <li class="item"> <div class="panorama-page__move-up">
+                    <picture>
+                        <source
+                            srcset="
+                            ./images/mobile/image13-450.jpg 1x,
+                            ./images/mobile/image13-900.jpg 2x
+                            "
+                            media="(max-width: 767px)"
+                            type="image/jpeg"
+                        />
+                        <source
+                            srcset="
+                              ./images/tabletka/image13-354.jpg 1x,
+                              ./images/tabletka/image13-708.jpg 2x
+                            "
+                            media="(max-width: 1199px)"
+                            type="image/jpeg"
+                        />
+                        <source
+                            srcset="
+                            ./images/desktop/image13-370.jpg 1x,
+                            ./images/desktop/image13-740.jpg 2x
+                            "
+                            type="image/jpeg"
+                        />
+                        <img
+                            class="panorama-icon"
+                            src="./images/mobile/image13-450.jpg"
+                            alt="робота"
+                        />
+                    </picture> 
                     <div class="panorama-page__move"><p class="panorama-page__move-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div></div>
                     <div class="panorama-page__under-card">
                 <h2 class="panorama-page__title-card">Growing Business</h2>
