@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>Document</title>
 </head>
-<body >
+<body data-menu-overflow>
     <!-- Шапка сайту -------------------------------->
     <header class="header-page">
         <div class="container">
@@ -19,7 +19,7 @@
                 <a href="#" class="logo ">Web</a></li>
                 <a href="#" class="logo black-logo">Studio</a></li>
             </span>
-          <div class="menu-container" data-menu>
+          <div class="menu-container" data-menu >
         <nav class="header-page__nav">
             <ul class="header-page__nav-list">
                 <li class="item"><a href="#" class="header-page__link blue-link">Студія</a></li>
@@ -97,15 +97,59 @@
                 <div class="container">
                 <h2 class="main-page-title">Чим ми займаємося</h2>
                 <ul class="occupation-page__list">
-                    <li class="item"> <img src="./images/image.jpg" alt="80% практики" width="370"/>
+                    <li class="item"> 
+                        <picture>
+                            <source
+                                srcset="
+                                ./images/icon1-370.jpg 1x,
+                                ./images/icon1-740.jpg 2x
+                                "
+                               
+                                type="image/jpeg"
+                            />
+                            <img
+                                class="uccupation-icon"
+                                src="./images/icon1-370.jpg"
+                                alt="80% практики"
+                                />
+                            </picture>
                         <div class="occupation-page__bottom"><p class="occupation-page__text">ДЕСКНОПНІ ДОДАТКИ</p></div>
                     </li>
 
-                    <li class="item"> <img src="./images/image1.jpg" alt="робота з прогами на телефоні" width="370"/>
+                    <li class="item">
+                        <picture>
+                            <source
+                                srcset="
+                                ./images/icon2-370.jpg 1x,
+                                ./images/icon2-740.jpg 2x
+                                "
+                                
+                                type="image/jpeg"
+                            />
+                            <img
+                                class="uccupation-icon"
+                                src="./images/icon2-370.jpg"
+                                alt="робота з прогами на телефоні"
+                                />
+                            </picture>
                         <div class="occupation-page__bottom"><p class="occupation-page__text">МОБІЛЬНІ ДОДАТКИ</p></div>
                     </li>
 
-                    <li class="item"> <img src="./images/image2.jpg" alt="оформлення сайтів" width="370"/>
+                    <li class="item">
+                        <picture>
+                            <source
+                                srcset="
+                                ./images/icon3-370.jpg 1x,
+                                ./images/icon3-740.jpg 2x
+                                "
+                                
+                                type="image/jpeg"
+                            />
+                            <img
+                                class="uccupation-icon"
+                                src="./images/icon3-370.jpg" 
+                                alt="оформлення сайтів"/>
+                            </picture>
                         <div class="occupation-page__bottom"><p class="occupation-page__text">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p></div>
                     </li>
                 </ul>

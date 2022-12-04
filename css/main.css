@@ -69,6 +69,14 @@ body {
   }
 }
 
+body.is-modal-hidden {
+  overflow: hidden;
+}
+
+.is-scroll {
+  overflow: hidden;
+}
+
 .menu-container {
   display: -webkit-box;
   display: -ms-flexbox;
