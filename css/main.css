@@ -723,7 +723,9 @@ body {
 
 /*TEAM-LIST--------------------------------*/
 .team-page {
+  margin: auto;
   background-color: #F5F4FA;
+  min-width: 480px;
   padding: 60px 0px;
 }
 @media screen and (min-width: 1200px) {
